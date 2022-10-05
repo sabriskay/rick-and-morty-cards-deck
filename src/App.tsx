@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { GraphQLClient, gql } from 'graphql-request';
+
+async function main() {
+  const endpoint = 'https://rickandmortyapi.com/graphql'
+  const graphQLClient = new GraphQLClient(endpoint)
+
+  const GET_CHARACTERS_QUERY = gql`
+    query getCharacters {
+      characters {
+        results {
+          name, 
+          id
+        }
+      }
+    }
+  `
+
+  const data = await graphQLClient.request(GET_CHARACTERS_QUERY)
+  console.log(JSON.stringify(data, undefined, 2))
+}
+
+main()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <></>
   );
 }
 
