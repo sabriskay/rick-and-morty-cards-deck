@@ -1,32 +1,28 @@
 import React from 'react';
 import './App.css';
+import { ApolloProvider } from "@apollo/react-hooks";
+import GetCharacters from './Components/GetCharacters';
+import { ApolloClient } from '@apollo/client';
+import { InMemoryCache } from '@apollo/client';
+import { HttpLink } from '@apollo/client';
 
-import { GraphQLClient, gql } from 'graphql-request';
+const cache = new InMemoryCache();
+const link = new HttpLink({
+  uri: 'https://rickandmortyapi.com/graphql',
+});
 
-async function main() {
-  const endpoint = 'https://rickandmortyapi.com/graphql'
-  const graphQLClient = new GraphQLClient(endpoint)
-
-  const GET_CHARACTERS_QUERY = gql`
-    query getCharacters {
-      characters {
-        results {
-          name, 
-          id
-        }
-      }
-    }
-  `
-
-  const data = await graphQLClient.request(GET_CHARACTERS_QUERY)
-  console.log(JSON.stringify(data, undefined, 2))
-}
-
-main()
+const client = new ApolloClient({
+  // Provide required constructor fields
+  cache: cache,
+  link: link,
+});
 
 function App() {
-  return (
-    <></>
+  return (<React.StrictMode>
+      <ApolloProvider client={client}>
+        <GetCharacters/>
+      </ApolloProvider>
+  </React.StrictMode>
   );
 }
 
