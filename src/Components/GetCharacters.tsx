@@ -1,24 +1,41 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {GET_CHARACTERS_QUERY} from '../GraphQL/Queries';
 import { useQuery } from "@apollo/react-hooks";
+import { gql } from '@apollo/client';
+
+interface Character {
+  name: string,
+  id: number,
+  image: string
+}
 
 function GetCharacters() {
-  const { data, loading, error } = useQuery(GET_CHARACTERS_QUERY);
 
-  
+  const { loading, error, data } = useQuery(GET_CHARACTERS_QUERY);
 
-  const characters = data?.characters
+  const [characters, setCharacters] = useState<Array<Character>>([]);
+
+  useEffect(() => {
+    if (data) {
+      setCharacters(data.characters.results);
+    }
+  }, [data] );
 
   if (loading) return <p>Almost there...</p>
   if (error) return <p>{error.message}</p>
 
   return (
     <>
-      <pre>
-        {JSON.stringify(characters, null, "  ")}
-      </pre>
+      <div>
+        {characters.map(character => (
+          <>
+            {character.name} <img src={character.image}></img>
+          </>
+        ))}
+        
+      </div>
     </>
   )
 }
 
-export default GetCharacters
+export default GetCharacters;
