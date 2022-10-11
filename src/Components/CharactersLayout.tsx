@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import {GET_CHARACTERS_QUERY} from '../GraphQL/Queries';
 import { useQuery } from "@apollo/react-hooks";
-import { gql } from '@apollo/client';
+import { connect } from "react-redux";
+import store, { RootState } from '../app/store';
+import { setCharacters } from '../app/reducers/Characters';
 
 interface Character {
   name: string,
@@ -9,17 +11,16 @@ interface Character {
   image: string
 }
 
-function GetCharacters() {
-
+// TODO - Ver tipos
+function CharactersLayout({ characters, setCharacters }: { characters: Array<Character>, setCharacters: unknown }) {
   const { loading, error, data } = useQuery(GET_CHARACTERS_QUERY);
-
-  const [characters, setCharacters] = useState<Array<Character>>([]);
 
   useEffect(() => {
     if (data) {
-      setCharacters(data.characters.results);
+      // @ts-ignore
+      store.dispatch(setCharacters(data.characters.results));
     }
-  }, [data] );
+  }, [ data ] );
 
   if (loading) return <p>Almost there...</p>
   if (error) return <p>{error.message}</p>
@@ -32,10 +33,14 @@ function GetCharacters() {
             {character.name} <img src={character.image}></img>
           </>
         ))}
-        
       </div>
     </>
   )
 }
 
-export default GetCharacters;
+export default connect(
+  (state: RootState) => state,
+  { 
+    setCharacters
+  }
+)(CharactersLayout);

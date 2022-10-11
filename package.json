@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -17,7 +18,9 @@
     "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.4",
     "react-scripts": "5.0.1",
+    "styled-component": "^2.8.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -25,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "schema:download": "npx apollo service:download --endpoint=https://anilist.co/graphql ./src/app/graphql/graphql-schema.json",
+    "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql/graphql-schema.json --target=typescript --tagName=gql --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +51,10 @@
     ]
   },
   "devDependencies": {
-    "graphql-request": "^5.0.0"
+    "@types/redux-logger": "^3.0.9",
+    "@types/styled-components": "^5.1.26",
+    "graphql-request": "^5.0.0",
+    "react-apollo": "^3.1.5",
+    "redux-starter-kit": "^2.0.0"
   }
 }

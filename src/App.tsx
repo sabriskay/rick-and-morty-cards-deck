@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import { ApolloProvider } from "@apollo/react-hooks";
-import GetCharacters from './Components/GetCharacters';
-import { ApolloClient } from '@apollo/client';
-import { InMemoryCache } from '@apollo/client';
-import { HttpLink } from '@apollo/client';
+import CharactersLayout from './Components/CharactersLayout';
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { Provider } from "react-redux";
+import store from './app/store'
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
@@ -18,11 +18,14 @@ const client = new ApolloClient({
 });
 
 function App() {
-  return (<React.StrictMode>
+  return (
+    <React.StrictMode>
       <ApolloProvider client={client}>
-        <GetCharacters/>
+        <Provider store={store}>
+          <CharactersLayout/>
+        </Provider>
       </ApolloProvider>
-  </React.StrictMode>
+    </React.StrictMode>
   );
 }
 
