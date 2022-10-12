@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import CharactersReducer from './reducers/Characters';
+import homePageReducer from './containers/HomePage/homePageSlice'
+
 
 const store = configureStore({
     reducer: {
-        characters: CharactersReducer
+        homePage: homePageReducer
     },
 });
 
