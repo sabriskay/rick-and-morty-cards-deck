@@ -9,6 +9,7 @@ import styled from "styled-components";
 import { StyledEngineProvider } from '@mui/material/styles';
 import Card from '../../components/Card';
 import Typography from '@mui/material/Typography';
+import { transform } from "@babel/core";
 
 const stateSelector = createSelector(makeSelectCharacters, (charactersList) => ({
     charactersList,
@@ -32,20 +33,42 @@ const useStyles = makeStyles({
     rowGap: "5px",
     columnGap: "2%",
   },
+  cardContent: {
+    right: 0,
+    padding: '10px',
+    position: "absolute"
+  },
   title1: {
     fontWeight: 800,
-    lineHeight: 1
+    lineHeight: 1,
+    textOrientation: "mixed",
+    "writing-mode": "vertical-lr",
+    fontSize: "1.2rem",
+    textShadow: "1px 1px #02020282",
+    fontFamily: 'rickandmorty'
   },
-  body1: {
-    color: "#fff",
-    fontSize: "0.55em"
-
+  titleStatus: {
+    position: "absolute",
+    color: "red",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    textOrientation: "mixed",
+    "writing-mode": "vertical-lr",
+    fontSize: "6em",
+    transform: "rotateZ(220deg)",
+    fontFamily: 'rickandmorty'
   }
 })
 
 const CardImg = styled.div` 
-  margin: 5px 5px 0;
-  height: 65%;
+  margin: 5px;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -92,20 +115,6 @@ export function Characters() {
         return <div>Loading...</div>;
     }
 
-    /*return (
-      <StyledEngineProvider injectFirst>
-        <Container sx={{ display: 'flex' }} className={classes.container}>
-            {charactersList && charactersList.results && 
-                charactersList.results.map((character:ICharacter) => (
-                <MUICard className={classes.card} onClick={handleShowCharacterName}>
-                  <CharacterDeadTextImg src={character?.image || ""} alt={character.status}/>
-                </MUICard>
-            ))}
-        </Container> 
-      </StyledEngineProvider>
-
-    );*/
-
     const switchActive = (id: number | undefined) => {
       if (active === id) {
         setActive(undefined);
@@ -125,20 +134,14 @@ export function Characters() {
                 <StyledEngineProvider injectFirst={true}>
                   <MUICard className={classes.card} onClick={handleShowCharacterName}>
                     <CardImg style={{ backgroundImage: `url(${character?.image || ""})`}} />
-                    <CardContent sx={{ display: 'grid', padding: '10px' }}>
-                      <Typography variant="subtitle1" component="div" className={classes.title1}>
-                      {character.name}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary" className={classes.body1}>
-                        {character.species} - {character?.type || ""}
-                      </Typography>
-                      <Typography variant="subtitle2" component="span">
-                        Last known location:
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary" fontSize="0.55em">
-                        {character.location?.name}
+                    <CardContent className={classes.cardContent}>
+                      <Typography variant="h2" component="p" className={classes.title1}>
+                      {character.name.toUpperCase()}
                       </Typography>
                     </CardContent>
+                    <Typography component="div" className={classes.titleStatus}>
+                        {character.status == "Dead" && character.status.toUpperCase()}
+                      </Typography>
                   </MUICard>
                 </StyledEngineProvider>
               </Card>
