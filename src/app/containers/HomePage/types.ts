@@ -4,3 +4,11 @@ import { GetCharacters } from "../../services/rickyandMortyService/__generated__
 export interface IHomePageState {
   charactersList: GetCharacters["characters"]
 }
+
+
+export interface ICharacter {
+  name: string,
+  id: number,
+  image: string,
+  species: string
+}

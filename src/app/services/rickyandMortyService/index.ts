@@ -10,12 +10,12 @@ class RickyandMortyService {
           variables: { page },
         });
   
-        if (!response || !response.data)
+        if (!response || !response.data) {
           throw new Error("Cannot get characters list!");
-  
-        console.log("DATA: ", response.data);
+        }
   
         return response.data.characters;
+
       } catch (err) {
         throw err;
       }

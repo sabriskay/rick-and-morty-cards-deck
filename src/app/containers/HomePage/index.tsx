@@ -4,7 +4,8 @@ import { useAppDispatch } from "../../hooks";
 import RickyandMortyService from "../../services/rickyandMortyService";
 import { GetCharacters } from "../../services/rickyandMortyService/__generated__/GetCharacters";
 import { setCharacters } from "./homePageSlice";
-import { Container, Box } from '@mui/material';
+import { Container } from '@mui/material';
+import { Characters } from './characters';
 
 interface IHomePageProps {}
 
@@ -32,9 +33,7 @@ export function HomePage(props: IHomePageProps) {
 
   return (
     <Container maxWidth="sm">
-       <Box sx={{ my: 4 }}>
-        <h1>Characters</h1>
-       </Box>
+        <Characters/>
     </Container>
   );
 }

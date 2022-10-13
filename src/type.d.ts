@@ -1,4 +1,4 @@
-interface Character {
+export interface ICharacter {
     name: string,
     id: number,
     image: string,
