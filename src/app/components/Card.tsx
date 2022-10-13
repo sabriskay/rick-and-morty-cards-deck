@@ -1,5 +1,5 @@
-import React from "react"
-import type { ReactElement } from "react"
+import React from "react";
+import type { ReactElement } from "react";
 import styled from "styled-components";
 import { ICharacter } from "../../type";
 
@@ -46,29 +46,29 @@ const CardBackFaceImage = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 5px;
-`
+`;
 
 export default function CardWrapper({  active, onClick, character, children }: { active: boolean, onClick?: (id: number) => void, character: ICharacter, children: ReactElement }) {
-    const [ rotation, _ ] = React.useState((Math.random() * 40) - 40);
-    const [ positionX, __ ] = React.useState((Math.random() * 400) - 200);
-    const [ positionY, ___ ] = React.useState((Math.random() * 200) - 100);
+    const [ rotation] = React.useState((Math.random() * 40) - 40);
+    const [ positionX] = React.useState((Math.random() * 400) - 200);
+    const [ positionY] = React.useState((Math.random() * 200) - 100);
 
     const style = {
-      transform: !active ? 
-        `translateX(${positionX}%) translateY(${positionY}%) rotateZ(${rotation}deg) rotate3d(0, 1, 0, 180deg)`: 
-        `scale(1.5)`,
-      zIndex: active ? 2 : 0,
-      padding: active ? "4px" : 0
-    }
+        transform: !active ? 
+            `translateX(${positionX}%) translateY(${positionY}%) rotateZ(${rotation}deg) rotate3d(0, 1, 0, 180deg)`: 
+            "scale(1.5)",
+        zIndex: active ? 2 : 0,
+        padding: active ? "4px" : 0
+    };
     
     return (
-      <Card onClick={() => { !!onClick && onClick(character.id) }} style={style}>
-          <Front>
-            {children}
-          </Front>
-          <Back>
-            <CardBackFaceImage src="/assets/card-back-face.jpg"></CardBackFaceImage>
-          </Back>
-      </Card>
+        <Card onClick={() => { !!onClick && onClick(character.id); }} style={style}>
+            <Front>
+                {children}
+            </Front>
+            <Back>
+                <CardBackFaceImage src="/assets/card-back-face.jpg"></CardBackFaceImage>
+            </Back>
+        </Card>
     );
 }

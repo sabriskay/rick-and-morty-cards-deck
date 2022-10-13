@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'rickandmorty';
-  src: local('rickandmorty'),  url("http://localhost:3000/assets/fonts/get_schwifty.ttf") format('truetype');
+  src: local('rickandmorty'),  url("./fonts/get_schwifty.ttf") format('truetype');
 }
 
 html,

@@ -21,8 +21,8 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "apollo-boost": "^0.4.9",
-    "eslint": "^8.24.0",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint": "^8.25.0",
+    "eslint-plugin-react": "^7.31.10",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -40,6 +40,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.ts src/**/*.tsx",
     "schema:download": "npx apollo service:download --endpoint=https://rickandmortyapi.com/graphql ./src/app/graphql/graphql-schema.json",
     "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql/graphql-schema.json --target=typescript --tagName=gql --watch"
   },
@@ -64,6 +65,8 @@
   "devDependencies": {
     "@types/redux-logger": "^3.0.9",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
     "graphql-request": "^5.0.0",
     "react-apollo": "^3.1.5",
     "redux-starter-kit": "^2.0.0"

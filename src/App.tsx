@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { HomePage } from "./app/containers/HomePage";
 
 function App() {
-  return (
-    <HomePage />
-  );
+    return (
+        <HomePage />
+    );
 }
 
 export default App;
