@@ -27,6 +27,14 @@ export interface GetCharacters_characters_info {
   prev: number | null;
 }
 
+export interface GetCharacters_characters_results_location {
+  __typename: "Location";
+  /**
+   * The name of the location.
+   */
+  name: string | null;
+}
+
 export interface GetCharacters_characters_results {
   __typename: "Character";
   /**
@@ -46,6 +54,18 @@ export interface GetCharacters_characters_results {
    * All images are 300x300px and most are medium shots or portraits since they are intended to be used as avatars.
    */
   image: string | null;
+  /**
+   * The species of the character.
+   */
+  species: string | null;
+  /**
+   * The type or subspecies of the character.
+   */
+  type: string | null;
+  /**
+   * The character's last known location
+   */
+  location: GetCharacters_characters_results_location | null;
 }
 
 export interface GetCharacters_characters {

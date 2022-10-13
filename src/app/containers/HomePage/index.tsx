@@ -32,7 +32,6 @@ export function HomePage(props: IHomePageProps) {
     });
 
     if (charactersList && charactersList.info) {
-      console.log("farryttryrts",charactersList)
       setCharacters(charactersList);
       
       if (charactersList.info.pages && charactersList.info.pages != pagesCount) {
@@ -51,9 +50,8 @@ export function HomePage(props: IHomePageProps) {
     pagesValue.push({value: i, label: i});
   }
 
-  return (
-    <Container>
-      <Paper>
+  /**
+   * <Paper>
         <Box mt={4} padding={2}>
         <TextField
             id="select-page"
@@ -71,7 +69,11 @@ export function HomePage(props: IHomePageProps) {
           </TextField>
         </Box>
         </Paper>
-      <Box>
+   */
+
+  return (
+    <Container style={{ width: '100%', height: '100%' }}>
+      <Box style={{ width: '100%', height: '100%' }}>
         <Characters/>
       </Box>
     </Container>  

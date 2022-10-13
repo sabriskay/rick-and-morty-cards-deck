@@ -14,6 +14,11 @@ export const GET_CHARACTERS_QUERY = gql`
           name
           status
           image
+          species
+          type
+          location {
+            name
+          }
         }
     }
   }
