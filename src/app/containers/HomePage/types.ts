@@ -2,8 +2,7 @@ import { GetCharacters } from "../../services/rickyandMortyService/__generated__
 
 
 export interface IHomePageState {
-  charactersList: GetCharacters["characters"],
-  pageCount: number
+  charactersList: GetCharacters["characters"]
 }
 
 

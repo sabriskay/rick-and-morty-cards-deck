@@ -2,8 +2,7 @@ import { createSlice, Slice } from "@reduxjs/toolkit";
 import { IHomePageState } from "./types";
 
 const initialState: IHomePageState = {
-  charactersList: null,
-  pageCount: 0
+  charactersList: null
 }
 
 const CharactersSlice: Slice = createSlice({
@@ -12,14 +11,11 @@ const CharactersSlice: Slice = createSlice({
   reducers: {
     setCharacters: (state, action) => {
       state.charactersList = action.payload
-    },
-    setPageCount:(state, action) => {
-      state.charactersList = action.payload
     }
   }
 });
 
 
 const { actions, reducer } = CharactersSlice;
-export const { setCharacters, setPageCount } = actions;
+export const { setCharacters } = actions;
 export default reducer;

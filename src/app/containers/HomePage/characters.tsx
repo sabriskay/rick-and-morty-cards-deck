@@ -1,19 +1,16 @@
-import React from 'react';
 import { createSelector } from 'reselect';
 import { makeSelectCharacters } from './selectors';
 import { useAppSelector } from "../../hooks";
 import { ICharacter } from "./types";
-import { Box, Container } from '@mui/material';
-import Card from '@mui/material/Card';
+import { Container, Card } from '@mui/material';
 import { makeStyles } from "@mui/styles";
-
 import styled from "styled-components";
-
 import { StyledEngineProvider } from '@mui/material/styles';
 
 const stateSelector = createSelector(makeSelectCharacters, (charactersList) => ({
     charactersList,
-}))
+}));
+
 const useStyles = makeStyles({
   card: {
     border: 0,
@@ -30,16 +27,8 @@ const useStyles = makeStyles({
 })
 
 const CharacterDeadTextImg = styled.img` 
-&+b:after {
-    content: '"a string"';
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    right: 20vw;
-    width: 20vw;
-    font-size: 0.75rem;
-    color: #930;
-  }
+  height: 120px;
+  width: 100px;
 `;
 const TextDead = styled.span`
   font-size: 2rem;
@@ -49,9 +38,11 @@ const TextDead = styled.span`
   align-items: flex-start;
   justify-content: center;
 `
+const handleShowCharacterName = () => {
+  
+}
 
 export function Characters() {
-  
     const classes = useStyles();
     //TODO check type
     const { charactersList }: any = useAppSelector(stateSelector);
@@ -68,8 +59,9 @@ export function Characters() {
         <Container sx={{ display: 'flex' }} className={classes.container}>
             {charactersList && charactersList.results && 
                 charactersList.results.map((character:ICharacter) => (
-                <Card className={classes.card}>
-                  <CharacterDeadTextImg src={character?.image || ""} alt={character.status} width="100" height="120"/>{character.status==="Dead" ? <TextDead>DEAD</TextDead> :""}
+                <Card className={classes.card} onClick={handleShowCharacterName}>
+                  <CharacterDeadTextImg src={character?.image || ""} alt={character.status}/>
+                  {character.status==="Dead" ? <TextDead>DEAD</TextDead> :""}
                 </Card>
             ))}
         </Container> 
