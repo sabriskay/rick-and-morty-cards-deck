@@ -35,15 +35,17 @@ const useStyles = makeStyles({
   },
   cardContent: {
     right: 0,
-    padding: '10px',
-    position: "absolute"
+    padding: '5px',
+    position: "absolute",
+    margin: "6px",
+    backdropFilter: "brightness(0.97) blur(1px)"
   },
   title1: {
     fontWeight: 800,
     lineHeight: 1,
     textOrientation: "mixed",
     "writing-mode": "vertical-lr",
-    fontSize: "1.2rem",
+    fontSize: "1.5rem",
     textShadow: "1px 1px #02020282",
     fontFamily: 'rickandmorty'
   },
