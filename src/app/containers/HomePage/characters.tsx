@@ -98,7 +98,7 @@ const Blur = styled.div`
   pointer-events: none;
 `;
 
-export default function Characters() {
+export function Characters() {
     const [ active, setActive ] = React.useState<number | undefined>(undefined);
 
     const classes = useStyles();
