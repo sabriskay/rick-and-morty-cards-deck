@@ -4,10 +4,6 @@ export interface IHomePageState {
   charactersList: GetCharacters["characters"];
 }
 
-type Location = {
-  name: string;
-};
-
 export interface ICharacter {
   name: string;
   id: number;
@@ -15,5 +11,4 @@ export interface ICharacter {
   species: string;
   status: string;
   type: string;
-  location: Location;
 }

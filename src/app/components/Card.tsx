@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { ICharacter } from "../../type";
 import { StyledEngineProvider } from "@mui/styled-engine";
 import { Card as MUICard, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { GetCharacters_characters_results } from "../services/rickyandMortyService/__generated__/GetCharacters";
 
 const useStyles = makeStyles({
   card: {
@@ -117,8 +117,8 @@ export default function CardWrapper({
   character,
 }: {
   active: boolean;
-  onClick?: (id: number) => void;
-  character: ICharacter;
+  onClick?: (id: number | null | undefined) => void;
+  character: GetCharacters_characters_results | null;
 }) {
   const [rotation] = React.useState(Math.random() * 40 - 40);
   const [positionX] = React.useState(Math.random() * 400 - 200);
@@ -137,7 +137,7 @@ export default function CardWrapper({
     <Card
       data-cy={"card"}
       onClick={() => {
-        !!onClick && onClick(character.id);
+        !!onClick && onClick(character?.id);
       }}
       style={style}
     >
@@ -149,11 +149,11 @@ export default function CardWrapper({
             />
             <CardContent className={classes.cardContent}>
               <Typography variant="h2" component="p" className={classes.title1}>
-                {character.name.toUpperCase()}
+                {!!character && character.name?.toUpperCase()}
               </Typography>
             </CardContent>
             <Typography component="div" className={classes.titleStatus}>
-              {character.status == "Dead" && character.status.toUpperCase()}
+              {!!character && character.status === "Dead" && character.status.toUpperCase()}
             </Typography>
           </MUICard>
         </StyledEngineProvider>

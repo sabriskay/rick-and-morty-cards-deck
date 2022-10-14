@@ -40,7 +40,7 @@ export interface GetCharacters_characters_results {
   /**
    * The id of the character.
    */
-  id: string | null;
+  id: number | null;
   /**
    * The name of the character.
    */
