@@ -15,7 +15,6 @@ const CharactersSlice: Slice = createSlice({
   }
 });
 
-
 const { actions, reducer } = CharactersSlice;
 export const { setCharacters } = actions;
 export default reducer;

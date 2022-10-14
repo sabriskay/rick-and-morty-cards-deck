@@ -3,77 +3,12 @@ import { createSelector } from "reselect";
 import { makeSelectCharacters } from "./selectors";
 import { useAppSelector } from "../../hooks";
 import { ICharacter } from "./types";
-import { Card as MUICard, CardContent } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import styled from "styled-components";
-import { StyledEngineProvider } from "@mui/material/styles";
 import Card from "../../components/Card";
-import Typography from "@mui/material/Typography";
 
 const stateSelector = createSelector(makeSelectCharacters, (charactersList) => ({
     charactersList,
 }));
-
-const useStyles = makeStyles({
-    card: {
-        border: 0,
-        boxSizing: "content-box",
-        borderColor: "transparent",
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#3c3e4480",
-        color: "#f5f5f5"
-    },
-    container: {
-        flexDirection: "row",
-        flexWrap: "wrap",
-        rowGap: "5px",
-        columnGap: "2%",
-    },
-    cardContent: {
-        right: 0,
-        padding: "5px",
-        position: "absolute",
-        margin: "6px",
-        backdropFilter: "brightness(0.97) blur(1px)"
-    },
-    title1: {
-        fontWeight: 800,
-        lineHeight: 1,
-        textOrientation: "mixed",
-        "writing-mode": "vertical-lr",
-        fontSize: "1.5rem",
-        textShadow: "1px 1px #02020282",
-        fontFamily: "rickandmorty"
-    },
-    titleStatus: {
-        position: "absolute",
-        color: "red",
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0,
-        display: "flex",
-        alignContent: "center",
-        justifyContent: "center",
-        alignItems: "center",
-        textOrientation: "mixed",
-        "writing-mode": "vertical-lr",
-        fontSize: "6em",
-        transform: "rotateZ(220deg)",
-        fontFamily: "rickandmorty"
-    }
-});
-
-const CardImg = styled.div` 
-  margin: 5px;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-`;
 
 const Playground = styled.div`
   width: 100%;
@@ -101,7 +36,6 @@ const Blur = styled.div`
 export function Characters() {
     const [ active, setActive ] = React.useState<number | undefined>(undefined);
 
-    const classes = useStyles();
     //TODO check type
     const { charactersList } : any = useAppSelector(stateSelector);
 
@@ -114,25 +48,11 @@ export function Characters() {
     };
 
     return (
-        <Playground>
-            <Blur style={{ backdropFilter: active ? "opacity(1) blur(10px)" : "opacity(0)" }}/>
+        <Playground data-cy={"playground"}>
+            <Blur data-cy={"blur"} style={{ backdropFilter: active ? "opacity(1) blur(10px)" : "opacity(0)" }}/>
             {charactersList && charactersList.results && 
             charactersList.results.map((character: ICharacter) => (
-                <Card key={character.name} active={active == character.id} onClick={switchActive} character={character}>
-                    <StyledEngineProvider injectFirst={true}>
-                        <MUICard className={classes.card}>
-                            <CardImg style={{ backgroundImage: `url(${character?.image || ""})`}} />
-                            <CardContent className={classes.cardContent}>
-                                <Typography variant="h2" component="p" className={classes.title1}>
-                                    {character.name.toUpperCase()}
-                                </Typography>
-                            </CardContent>
-                            <Typography component="div" className={classes.titleStatus}>
-                                {character.status == "Dead" && character.status.toUpperCase()}
-                            </Typography>
-                        </MUICard>
-                    </StyledEngineProvider>
-                </Card>
+                <Card key={character.name} active={active == character.id} onClick={switchActive} character={character}/>
             ))
             }
         </Playground>

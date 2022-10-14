@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: yarn start
+    ports:
+    - "3000:3000"
+    volumes:
+    - ./src:/usr/src/app/src
+    healthcheck:
+      test: ["curl", "http://localhost:3000"]
+      interval: 30s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
+  
+  cypress:
+    build:
+      context: .
+      dockerfile: Dockerfile_cypress
+    command: cypress open
+    environment:
+      - DISPLAY=172.20.32.1:0.0
+    volumes:
+    - ./cypress/e2e:/usr/src/app/cypress/e2e
+    - ./cypress/support:/usr/src/app/cypress/support
+    - ./cypress.config.js:/usr/src/app/cypress/cypress.config.js
+    depends_on:
+      - app
