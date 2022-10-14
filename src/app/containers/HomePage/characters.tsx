@@ -6,9 +6,12 @@ import { ICharacter } from "./types";
 import styled from "styled-components";
 import Card from "../../components/Card";
 
-const stateSelector = createSelector(makeSelectCharacters, (charactersList) => ({
+const stateSelector = createSelector(
+  makeSelectCharacters,
+  (charactersList) => ({
     charactersList,
-}));
+  }),
+);
 
 const Playground = styled.div`
   width: 100%;
@@ -34,27 +37,37 @@ const Blur = styled.div`
 `;
 
 export function Characters() {
-    const [ active, setActive ] = React.useState<number | undefined>(undefined);
+  const [active, setActive] = React.useState<number | undefined>(undefined);
 
-    //TODO check type
-    const { charactersList } : any = useAppSelector(stateSelector);
+  //TODO check type
+  const { charactersList }: any = useAppSelector(stateSelector);
 
-    const switchActive = (id: number | undefined) => {
-        if (active === id) {
-            setActive(undefined);
-        } else {
-            setActive(id);
-        }
-    };
+  const switchActive = (id: number | undefined) => {
+    if (active === id) {
+      setActive(undefined);
+    } else {
+      setActive(id);
+    }
+  };
 
-    return (
-        <Playground data-cy={"playground"}>
-            <Blur data-cy={"blur"} style={{ backdropFilter: active ? "opacity(1) blur(10px)" : "opacity(0)" }}/>
-            {charactersList && charactersList.results && 
-            charactersList.results.map((character: ICharacter) => (
-                <Card key={character.name} active={active == character.id} onClick={switchActive} character={character}/>
-            ))
-            }
-        </Playground>
-    );
+  return (
+    <Playground data-cy={"playground"}>
+      <Blur
+        data-cy={"blur"}
+        style={{
+          backdropFilter: active ? "opacity(1) blur(10px)" : "opacity(0)",
+        }}
+      />
+      {charactersList &&
+        charactersList.results &&
+        charactersList.results.map((character: ICharacter) => (
+          <Card
+            key={character.name}
+            active={active == character.id}
+            onClick={switchActive}
+            character={character}
+          />
+        ))}
+    </Playground>
+  );
 }

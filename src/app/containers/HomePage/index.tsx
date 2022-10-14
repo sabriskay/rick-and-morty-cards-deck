@@ -8,33 +8,34 @@ import { Container, Box } from "@mui/material";
 import { Characters } from "./characters";
 
 const actionDispatch = (dispatch: Dispatch) => ({
-    setCharacters: (charactersList: GetCharacters["characters"]) => dispatch(setCharacters(charactersList)),
+  setCharacters: (charactersList: GetCharacters["characters"]) =>
+    dispatch(setCharacters(charactersList)),
 });
 
-
 export function HomePage() {
-    const { setCharacters } = actionDispatch(useAppDispatch());
+  const { setCharacters } = actionDispatch(useAppDispatch());
 
-    const fetchCharactersList = async () => {
-        const charactersList = await RickyandMortyService.getCharacters(2).catch((err) => {
-            console.log("Error: ", err);
-        });
-
-        if (charactersList && charactersList.results) {
-            setCharacters(charactersList);
-        }
-    };
-
-    useEffect(() => {
-        fetchCharactersList();
-    }, []);
-
-
-    return (
-        <Container style={{ width: "100%", height: "100%" }}>
-            <Box style={{ width: "100%", height: "100%" }}>
-                <Characters/>
-            </Box>
-        </Container>  
+  const fetchCharactersList = async () => {
+    const charactersList = await RickyandMortyService.getCharacters(2).catch(
+      (err) => {
+        console.log("Error: ", err);
+      },
     );
+
+    if (charactersList && charactersList.results) {
+      setCharacters(charactersList);
+    }
+  };
+
+  useEffect(() => {
+    fetchCharactersList();
+  }, []);
+
+  return (
+    <Container style={{ width: "100%", height: "100%" }}>
+      <Box style={{ width: "100%", height: "100%" }}>
+        <Characters />
+      </Box>
+    </Container>
+  );
 }

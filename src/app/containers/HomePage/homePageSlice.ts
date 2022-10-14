@@ -2,17 +2,17 @@ import { createSlice, Slice } from "@reduxjs/toolkit";
 import { IHomePageState } from "./types";
 
 const initialState: IHomePageState = {
-  charactersList: null
-}
+  charactersList: null,
+};
 
 const CharactersSlice: Slice = createSlice({
   name: "homePage",
   initialState,
   reducers: {
     setCharacters: (state, action) => {
-      state.charactersList = action.payload
-    }
-  }
+      state.charactersList = action.payload;
+    },
+  },
 });
 
 const { actions, reducer } = CharactersSlice;
