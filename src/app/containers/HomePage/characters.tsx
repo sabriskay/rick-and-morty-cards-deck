@@ -2,10 +2,12 @@ import React from "react";
 import { createSelector } from "reselect";
 import { makeSelectCharacters } from "./selectors";
 import { useAppSelector } from "../../hooks";
-import { ICharacter } from "./types";
 import styled from "styled-components";
 import Card from "../../components/Card";
-import { GetCharacters, GetCharacters_characters, GetCharacters_characters_results } from "../../services/rickyandMortyService/__generated__/GetCharacters";
+import {
+  GetCharacters_characters,
+  GetCharacters_characters_results,
+} from "../../services/rickyandMortyService/__generated__/GetCharacters";
 
 const stateSelector = createSelector(
   makeSelectCharacters,
@@ -38,10 +40,15 @@ const Blur = styled.div`
 `;
 
 export function Characters() {
-  const [active, setActive] = React.useState<number | undefined | null>(undefined) ;
+  const [active, setActive] = React.useState<number | undefined | null>(
+    undefined,
+  );
 
   //TODO check type
-  const { charactersList } : { charactersList: GetCharacters_characters | null } = useAppSelector(stateSelector);
+  const {
+    charactersList,
+  }: { charactersList: GetCharacters_characters | null } =
+    useAppSelector(stateSelector);
 
   const switchActive = (id: number | undefined | null) => {
     if (active === id) {
@@ -61,14 +68,16 @@ export function Characters() {
       />
       {charactersList &&
         charactersList.results &&
-        charactersList.results.map((character: GetCharacters_characters_results | null) => (
-          <Card
-            key={character?.name}
-            active={active === character?.id}
-            onClick={switchActive}
-            character={character}
-          />
-        ))}
+        charactersList.results.map(
+          (character: GetCharacters_characters_results | null) => (
+            <Card
+              key={character?.name}
+              active={active === character?.id}
+              onClick={switchActive}
+              character={character}
+            />
+          ),
+        )}
     </Playground>
   );
 }

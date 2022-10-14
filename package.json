@@ -87,6 +87,7 @@
     "test": "node scripts/test.js",
     "test:cypress": "docker compose up --abort-on-container-exit --exit-code-from cypress",
     "lint": "eslint src/**/*.ts src/**/*.tsx",
+    "lint:fix": "npx prettier . --write && yarn lint --fix",
     "schema:download": "npx apollo service:download --endpoint=https://rickandmortyapi.com/graphql ./src/app/graphql/graphql-schema.json",
     "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql/graphql-schema.json --target=typescript --tagName=gql --watch"
   },

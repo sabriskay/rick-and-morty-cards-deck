@@ -15,21 +15,19 @@ const actionDispatch = (dispatch: Dispatch) => ({
 export function HomePage() {
   const { setCharacters } = actionDispatch(useAppDispatch());
 
-  const fetchCharactersList = async () => {
-    const charactersList = await RickyandMortyService.getCharacters(2).catch(
-      (err) => {
-        console.log("Error: ", err);
-      },
-    );
-
-    if (charactersList && charactersList.results) {
-      setCharacters(charactersList);
-    }
-  };
-
   useEffect(() => {
-    fetchCharactersList();
-  }, []);
+    (async () => {
+      const charactersList = await RickyandMortyService.getCharacters(2).catch(
+        (err) => {
+          console.log("Error: ", err);
+        },
+      );
+
+      if (charactersList && charactersList.results) {
+        setCharacters(charactersList);
+      }
+    })();
+  }, [setCharacters]);
 
   return (
     <Container style={{ width: "100%", height: "100%" }}>

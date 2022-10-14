@@ -153,7 +153,9 @@ export default function CardWrapper({
               </Typography>
             </CardContent>
             <Typography component="div" className={classes.titleStatus}>
-              {!!character && character.status === "Dead" && character.status.toUpperCase()}
+              {!!character &&
+                character.status === "Dead" &&
+                character.status.toUpperCase()}
             </Typography>
           </MUICard>
         </StyledEngineProvider>
