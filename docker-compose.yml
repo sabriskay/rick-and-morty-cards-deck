@@ -27,6 +27,6 @@ services:
     volumes:
     - ./cypress/e2e:/usr/src/app/cypress/e2e
     - ./cypress/support:/usr/src/app/cypress/support
-    - ./cypress.config.js:/usr/src/app/cypress/cypress.config.js
+    - ./cypress.config.js:/usr/src/app/cypress.config.js
     depends_on:
       - app

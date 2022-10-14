@@ -3,7 +3,7 @@ name: Test
 on: push
 
 jobs:
-  lint:
+  test:
     name: Test
     runs-on: ubuntu-latest
 
@@ -17,8 +17,7 @@ jobs:
           node-version: 14.x
 
       - name: "Install"
-        run: |
-          yarn
+        run: yarn
 
       - name: Test
         run: yarn test
