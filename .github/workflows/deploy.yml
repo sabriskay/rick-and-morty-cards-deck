@@ -27,3 +27,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: public
+          repository-name: sabriskay/sabriskay.github.io
+          token: ${{secrets.GITHUBTOKEN}}
