@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Dispatch } from "redux";
 import { useAppDispatch } from "../../hooks";
-import RickyandMortyService from "../../services/rickyandMortyService";
-import { GetCharacters } from "../../services/rickyandMortyService/__generated__/GetCharacters";
+import RickyandMortyService from "../../services/rickandMortyService";
+import { GetCharacters } from "../../services/rickandMortyService/__generated__/GetCharacters";
 import { setCharacters } from "./homePageSlice";
 import { Container, Box } from "@mui/material";
 import { Characters } from "./characters";

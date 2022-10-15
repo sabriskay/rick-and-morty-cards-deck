@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { StyledEngineProvider } from "@mui/styled-engine";
 import { Card as MUICard, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { GetCharacters_characters_results } from "../services/rickyandMortyService/__generated__/GetCharacters";
+import { GetCharacters_characters_results } from "../services/rickandMortyService/__generated__/GetCharacters";
 
 const useStyles = makeStyles({
   card: {

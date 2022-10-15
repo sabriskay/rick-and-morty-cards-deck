@@ -1,4 +1,4 @@
-import { GetCharacters } from "../../services/rickyandMortyService/__generated__/GetCharacters";
+import { GetCharacters } from "../../services/rickandMortyService/__generated__/GetCharacters";
 
 export interface IHomePageState {
   charactersList: GetCharacters["characters"];

@@ -7,7 +7,7 @@ import Card from "../../components/Card";
 import {
   GetCharacters_characters,
   GetCharacters_characters_results,
-} from "../../services/rickyandMortyService/__generated__/GetCharacters";
+} from "../../services/rickandMortyService/__generated__/GetCharacters";
 
 const stateSelector = createSelector(
   makeSelectCharacters,
