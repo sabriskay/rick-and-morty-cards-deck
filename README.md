@@ -1,6 +1,6 @@
 [![My Skills](https://skills.thijs.gg/icons?i=js,typescript,react,redux,graphql,docker,jest,cypress)](https://skills.thijs.gg)
 
-<h1 align="center"> Rick and Morty Cards Desk</h1>
+<h1 align="center"> Rick and Morty Cards Deck</h1>
 
 ![Build Status](https://github.com/probot/example-github-action/workflows/Test/badge.svg)
 
@@ -15,14 +15,13 @@
 <p align="justify"> 
   Find your favorite Rick And Morty character from a pile of jumbled cards. But be careful not to choose a ☠️ dead one.
 </p>
+[DEMO](https://sabriskay.github.io)
 
 <h2>Prerequisites</h2>
 
 - Install [Docker](https://docs.docker.com/engine/install/)
   - run <code>$ docker info</code> in your terminal to check the installation.
 
-<br/>
-<br/>
 <h2>Available Scripts</h2>
 
 In the project directory, you can run:
@@ -54,6 +53,19 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 `yarn test:cypress`
 
 Launches the end-to-end test runner in your browser. Receive the app status and verify your code in a friendly way.
+
+This command doesn't work yet due to misconfigurations. Please use `test:cypress:open` instead to test locally.
+
+`test:cypress:open`
+
+- Make sure you have installed cypress in your computer by doing `npm install -g cypress`
+- Make sure your application is running in localhost:3000
+- Then run this command which will open a new electron window in this project
+- In the new window click: "E2E Testing"
+- Then select "Chrome"
+- Then click on "Start E2E Testing in Chrome"
+- Then open any given spec by clicking on it
+- You can make changes to either the code or the spec, and re-run interactively
 
 `yarn schema:download`
 
