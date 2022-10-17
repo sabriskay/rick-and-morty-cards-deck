@@ -57,11 +57,11 @@ Launches the end-to-end test runner in your browser. Receive the app status and 
 
 `yarn schema:download`
 
-We are using https://rickandmortyapi.com/graphq API to create and get the character's data. I think it is better in this case to save the schema. Run this command to do that and know its structure in deep.
+We are using https://rickandmortyapi.com/graphq API to create and get the character's data. It is better in this case to save the schema. Run this command to do that and know its structure in deep.
 
 `yarn schema:generate-watch`
 
-Get and generate all the type for your query of interest. che the folther `__generated__` 👀
+After modify or apply a new queries you must to run it command to generate all the type for your query of interest. Then, check the folther `__generated__` 👀 to know the types, structures and method to work properly with the cards desk.
 
     .
     │
