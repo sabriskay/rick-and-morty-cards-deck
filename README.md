@@ -60,7 +60,7 @@ Launches the end-to-end test runner in your browser. Receive the app status and 
 
 This command doesn't work yet due to misconfigurations. Please use `test:cypress:open` instead to test locally.
 
-`test:cypress:open`
+`yarn test:cypress:open`
 
 - Make sure you have installed cypress in your computer by doing `npm install -g cypress`
 - Make sure your application is running in localhost:3000
