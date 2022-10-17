@@ -22,6 +22,9 @@
 
 - Install [Docker](https://docs.docker.com/engine/install/)
   - run <code>$ docker info</code> in your terminal to check the installation.
+- Install yarn `npm install --global yarn`
+  - Check installation `yarn --version`
+  - Just run `yarn` on the root project
 
 <h2>Available Scripts</h2>
 
