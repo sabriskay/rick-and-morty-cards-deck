@@ -24,7 +24,6 @@ const useStyles = makeStyles({
     columnGap: "2%",
   },
   cardContent: {
-    right: 0,
     padding: "5px",
     position: "absolute",
     margin: "6px",
