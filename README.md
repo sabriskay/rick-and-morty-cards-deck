@@ -2,7 +2,7 @@
 
 <h1 align="center"> Rick and Morty Cards Deck</h1>
 
-![Build Status](https://github.com/probot/example-github-action/workflows/Test/badge.svg)
+[![Build Status](https://github.com/sabriskay/rick-and-morty-cards-deck/workflows/Test/badge.svg)](https://github.com/sabriskay/rick-and-morty-cards-deck/actions)
 
 <p align="center"> 
   <img src="./rickandmorty-readme.gif" alt="Animated gif rickandmorty game" height="282px" width="637">
