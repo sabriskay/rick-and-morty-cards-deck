@@ -15,6 +15,7 @@
 <p align="justify"> 
   Find your favorite Rick And Morty character from a pile of jumbled cards. But be careful not to choose a ☠️ dead one.
 </p>
+
 [DEMO](https://sabriskay.github.io)
 
 <h2>Prerequisites</h2>
