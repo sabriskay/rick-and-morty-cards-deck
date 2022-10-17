@@ -14,14 +14,14 @@ exports[`Card Component with random = 0 renders correctly with character Beth Sm
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -43,7 +43,7 @@ exports[`Card Component with random = 0 renders correctly with character Beth Sm
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -68,14 +68,14 @@ exports[`Card Component with random = 0 renders correctly with character Beth Sm
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -97,7 +97,7 @@ exports[`Card Component with random = 0 renders correctly with character Beth Sm
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -122,14 +122,14 @@ exports[`Card Component with random = 0 renders correctly with character Jerry S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -151,7 +151,7 @@ exports[`Card Component with random = 0 renders correctly with character Jerry S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -176,14 +176,14 @@ exports[`Card Component with random = 0 renders correctly with character Jerry S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -205,7 +205,7 @@ exports[`Card Component with random = 0 renders correctly with character Jerry S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -230,14 +230,14 @@ exports[`Card Component with random = 0 renders correctly with character Morty S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -259,7 +259,7 @@ exports[`Card Component with random = 0 renders correctly with character Morty S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -284,14 +284,14 @@ exports[`Card Component with random = 0 renders correctly with character Morty S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -313,7 +313,7 @@ exports[`Card Component with random = 0 renders correctly with character Morty S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -338,14 +338,14 @@ exports[`Card Component with random = 0 renders correctly with character Rick Sa
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -367,7 +367,7 @@ exports[`Card Component with random = 0 renders correctly with character Rick Sa
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -392,14 +392,14 @@ exports[`Card Component with random = 0 renders correctly with character Rick Sa
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -421,7 +421,7 @@ exports[`Card Component with random = 0 renders correctly with character Rick Sa
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -446,14 +446,14 @@ exports[`Card Component with random = 0 renders correctly with character Summer 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -475,7 +475,7 @@ exports[`Card Component with random = 0 renders correctly with character Summer 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -500,14 +500,14 @@ exports[`Card Component with random = 0 renders correctly with character Summer 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -529,7 +529,7 @@ exports[`Card Component with random = 0 renders correctly with character Summer 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -554,14 +554,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Beth 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -583,7 +583,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Beth 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -608,14 +608,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Beth 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -637,7 +637,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Beth 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -662,14 +662,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Jerry
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -691,7 +691,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Jerry
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -716,14 +716,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Jerry
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -745,7 +745,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Jerry
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -770,14 +770,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Morty
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -799,7 +799,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Morty
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -824,14 +824,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Morty
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -853,7 +853,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Morty
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -878,14 +878,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Rick 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -907,7 +907,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Rick 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -932,14 +932,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Rick 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -961,7 +961,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Rick 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -986,14 +986,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Summe
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -1015,7 +1015,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Summe
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1040,14 +1040,14 @@ exports[`Card Component with random = 0.5 renders correctly with character Summe
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -1069,7 +1069,7 @@ exports[`Card Component with random = 0.5 renders correctly with character Summe
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1094,14 +1094,14 @@ exports[`Card Component with random = 1 renders correctly with character Beth Sm
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -1123,7 +1123,7 @@ exports[`Card Component with random = 1 renders correctly with character Beth Sm
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1148,14 +1148,14 @@ exports[`Card Component with random = 1 renders correctly with character Beth Sm
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/4.jpeg)",
@@ -1177,7 +1177,7 @@ exports[`Card Component with random = 1 renders correctly with character Beth Sm
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1202,14 +1202,14 @@ exports[`Card Component with random = 1 renders correctly with character Jerry S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -1231,7 +1231,7 @@ exports[`Card Component with random = 1 renders correctly with character Jerry S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1256,14 +1256,14 @@ exports[`Card Component with random = 1 renders correctly with character Jerry S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/5.jpeg)",
@@ -1285,7 +1285,7 @@ exports[`Card Component with random = 1 renders correctly with character Jerry S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1310,14 +1310,14 @@ exports[`Card Component with random = 1 renders correctly with character Morty S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -1339,7 +1339,7 @@ exports[`Card Component with random = 1 renders correctly with character Morty S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1364,14 +1364,14 @@ exports[`Card Component with random = 1 renders correctly with character Morty S
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/2.jpeg)",
@@ -1393,7 +1393,7 @@ exports[`Card Component with random = 1 renders correctly with character Morty S
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1418,14 +1418,14 @@ exports[`Card Component with random = 1 renders correctly with character Rick Sa
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -1447,7 +1447,7 @@ exports[`Card Component with random = 1 renders correctly with character Rick Sa
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1472,14 +1472,14 @@ exports[`Card Component with random = 1 renders correctly with character Rick Sa
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/1.jpeg)",
@@ -1501,7 +1501,7 @@ exports[`Card Component with random = 1 renders correctly with character Rick Sa
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1526,14 +1526,14 @@ exports[`Card Component with random = 1 renders correctly with character Summer 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -1555,7 +1555,7 @@ exports[`Card Component with random = 1 renders correctly with character Summer 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
@@ -1580,14 +1580,14 @@ exports[`Card Component with random = 1 renders correctly with character Summer 
   }
 >
   <div
-    className="sc-gswNZR jOlfhi"
+    className="sc-gswNZR jklgcC"
     data-cy="front"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-1 css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-eDvSVe bmdVZN"
+        className="sc-eDvSVe cOrZbp"
         style={
           Object {
             "backgroundImage": "url(https://rickandmortyapi.com/api/character/avatar/3.jpeg)",
@@ -1609,7 +1609,7 @@ exports[`Card Component with random = 1 renders correctly with character Summer 
     </div>
   </div>
   <div
-    className="sc-dkrFOg gLzyfx"
+    className="sc-dkrFOg jPanA-d"
     data-cy="back"
   >
     <img
